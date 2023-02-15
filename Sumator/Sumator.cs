@@ -8,16 +8,28 @@ namespace Sumator
 {
     public static class Sumator
     {
-        public static int Sum(int[] arr) 
+        public static long Sum(int[] arr) 
         {
-               int sum = arr[0];
+               long sum = 0;
 
-        for(int i = 1; i < arr.Length; i++)
+        for(int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
 
             return sum;
+        }
+
+        public static double Average(double[] arr)
+        {
+            double sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+
+            return sum / arr.Length;
         }
     }
 }
